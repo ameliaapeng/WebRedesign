@@ -1,135 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore China</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Tint&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
-    <style>
-        body {
-          color: #000000;   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore China</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f4ef;
+      color: #222;
+      line-height: 1.8;
+    }
 
-            background-color: #DC143C;
-      
-          
-            font-family: "Roboto", sans-serif;
-          
-            line-height: 1.6em;
-            margin: 0px;
-        }
-        .wrapper {
-            width: 1000px;
-            margin: 20px auto;
-            border: 2px solid #000;
-            background-color: #FFFF99;
-            padding: 20px;
-        }
-        #header {
-            height: 100px;
-            background-color: #FF3333;
-            text-align: center;
-            padding-top: 30px;
-        }
-        #header h1 {
-            font-family: "Bebas Neue", sans-serif;
-            font-size: 48px;
-            margin: 0;
-        }
-        #nav {
-            background-color: grey;
-            padding: 10px 0;
-        }
-        ul {
-            list-style-type: none;
-            margin: 2;
-            padding: 0;
-            overflow: hidden;
-            text-align: center;
-        }
-        li {
-            display: inline;
-            margin-right: 20px;
-        }
-        li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-        li a:hover {
-            color: black;
-        }
-        section {
-            padding: 20px;
-            border-bottom: 2px solid #eeeeee;
-        }
-        section img {
-            display: block;
-            margin: 0 auto;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #aeaca8;
-            color: white;
-        }
-    </style>
+    .wrapper {
+      max-width: 1100px;
+      margin: 40px auto;
+      background-color: #fffef8;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    #header {
+      background-color: #b3001b;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    #header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    #nav {
+      background-color: #222;
+      padding: 15px 0;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    #nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    #nav li {
+      display: inline;
+      margin: 0 18px;
+    }
+
+    #nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    #nav a:hover {
+      color: #ffcc00;
+    }
+
+    section {
+      padding: 30px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    section:last-child {
+      border-bottom: none;
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #b3001b;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      margin-bottom: 15px;
+    }
+
+    section img {
+      display: block;
+      margin: 20px auto;
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2c2c2c;
+      color: #fff;
+      font-size: 0.9rem;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <div class="wrapper">
-        <div id="header">
-            <h1>Explore China: Where I am From</h1>
-        </div>
-        <div id="nav">
-            <ul>
-                <li><a href="#welcome">Home</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#meaning">Meaning</a></li>
-                <li><a href="#ending">Ending</a></li>
-                <li><a href="mailto:a69peng@uwaterloo.ca">Contact</a></li>
-            </ul>
-        </div>
-        <section id="welcome">
-            <h2>Welcome to Beijing, China where I was born!</h2>
-            <p> Discover the rich history, vibrant culture, and breathtaking landscapes of Beijing, China. I was born in this extraordinary city—a place where you can find everything from high fashion and Michelin-starred cuisine to centuries-old traditions woven into everyday life. For many, Beijing is a dream destination or a vibrant stop on their travel bucket list. But for me, it's home. It's where I grew up, where my roots lie, and where my family’s story begins. Beijing isn’t just a city to me—it’s a part of who I am, a place that will always hold a special place in my heart. 
-          </p>
-            <img src="chinaview1.jpeg" alt="Beautiful view of Beijing China" width="600">
-            <img src="chinaview1.5.jpeg" alt="Sanlitun in Beijing China" width="600">
-
-        </section>
-        <section id="history">
-            <h2>History and Culture of Beijing</h2>
-            <p>Beijing has been a major cultural and political center for over 3,000 years. It became the capital during the Yuan Dynasty (1271–1368), and remained the capital under the Ming and Qing Dynasties.</p> 
-          
-         <p> Known for landmarks like the Forbidden City, Tiananmen Square, and parts of the Great Wall, Beijing has long been the heart of Chinese politics, tradition, and innovation. Today, it’s a blend of ancient history and modern vibrance—an iconic city that represents both the past and future of China. </p>
-          
-            <img src="chinaview2.jpeg" alt="The Great Wall of China" width="600">
-        </section>
-        <section id="meaning">
-            <h2>What does Beijing Mean to me?</h2>
-            <p>Beijing will always hold a special place in my heart. It’s the city where I took my very first steps, spoke my very first words, and created some of the most precious memories of my childhood. Every corner of the city holds a story—whether it's the scent of street food on a chilly evening, the sound of laughter echoing through the narrow hutongs, or the peaceful moments spent with family in familiar parks and neighborhoods.</p>
-          
-          <p>I grew up surrounded by its culture, its rhythm, and its ever-changing skyline. Though I now live in Canada, thousands of miles away, Beijing will forever remain a part of who I am. It shaped my earliest experiences and continues to influence how I see the world. No matter where life takes me, a piece of my heart will always belong to that vibrant, beautiful city. </p>
-            <img src="chinaview3.jpeg" alt="China Streets filled with Red Lanterns" width="600">
-            <img src="chinaview3.5.jpeg" alt="Rap performance in China Concert" width="600">
-
-        </section>
-        <section id="ending">
-            <h2>Ending Thoughts...</h2>
-          
-          <p>China has so much to offer—far more than what many people realize at first glance. Often, outsiders only see the surface: the towering skylines, the crowded tourist attractions, or the headlines they read.  But beneath that surface lies a rich, intricate tapestry of culture, history, tradition, and everyday life that reveals itself only to those who take the time to truly explore.</p> 
-          
-          <p>My biggest suggestion for anyone visiting China is this: go beyond the tourist guidebooks. Step away from the crowded landmarks and let yourself wander. Walk through local neighborhoods, try small family-run restaurants, strike up conversations, and observe the rhythm of daily life. There is so much depth waiting to be discovered—hidden stories, authentic experiences, and a genuine warmth that often gets overlooked.</p> 
-          
-          <p>China isn’t just a destination; it’s a journey that invites you to look deeper, to challenge your assumptions, and to walk away with a newfound appreciation for its beauty, complexity, and heart. So come with an open mind and a curious spirit—and let the country surprise you.</p>
-          
-            <img src="chinaview4.jpeg" alt="Shanghai skyline at night" width="600">
-            <img src="chinaview4.5.jpeg" alt="Rap performance in China Concert" width="600">
-        </section>
-        <footer>
-            <p>&copy; 2025 Explore China | <a href="https://en.wikipedia.org/wiki/China" target="_blank">Learn More</a></p>
-        </footer>
+  <div class="wrapper">
+    <div id="header">
+      <h1>Explore China: Where I Am From</h1>
     </div>
+    <div id="nav">
+      <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#meaning">Meaning</a></li>
+        <li><a href="#ending">Ending</a></li>
+        <li><a href="mailto:a69peng@uwaterloo.ca">Contact Me</a></li>
+      </ul>
+    </div>
+
+    <section id="intro">
+      <h2>Welcome to Beijing, China—Where I Was Born</h2>
+      
+    
+      <p> Discover the rich history, vibrant culture, and breathtaking landscapes of Beijing, China. I was born in this extraordinary city—a place where you can find everything from high fashion and Michelin-starred cuisine to centuries-old traditions woven into everyday life. For many, Beijing is a dream destination or a vibrant stop on their travel bucket list. But for me, it's home. It's where I grew up, where my roots lie, and where my family’s story begins.</p>
+      
+      <p>Beijing isn’t just a city to me—it’s a part of who I am, a place that will always hold a special place in my heart.</p>
+      
+      <img src="chinaview1.jpeg" alt="Runaway Model walking in China">
+      <img src="chinaview1.5.jpeg" alt="Sanlitun in Beijing China">
+    </section>
+
+    <section id="history">
+      <h2>History and Culture of Beijing</h2>
+      
+         <p>Beijing has been a major cultural and political center for over 3,000 years. It became the capital during the Yuan Dynasty (1271–1368), and remained the capital under the Ming and Qing Dynasties.</p> 
+      
+         <p> Known for landmarks like the Forbidden City, Tiananmen Square, and parts of the Great Wall, Beijing has long been the heart of Chinese politics, tradition, and innovation. Today, it’s a blend of ancient history and modern vibrance—an iconic city that represents both the past and future of China. </p>
+      
+      <img src="chinaview2.jpeg" alt="The Great Wall of China">
+      <img src="chinaview2.5.jpeg" alt="The Great Wall of China">
+
+    </section>
+
+    <section id="meaning">
+      <h2>What Does Beijing Mean to Me?</h2>
+      
+            <p>Beijing will always hold a special place in my heart. It’s the city where I took my very first steps, spoke my very first words, and created some of the most precious memories of my childhood. Every corner of the city holds a story—whether it's the scent of street food on a chilly evening, the sound of laughter echoing through the narrow hutongs, or the peaceful moments spent with family in familiar parks and neighborhoods.</p>
+      
+          <p>I grew up surrounded by its culture, its rhythm, and its ever-changing skyline. Though I now live in Canada, thousands of miles away, Beijing will forever remain a part of who I am. It shaped my earliest experiences and continues to influence how I see the world. No matter where life takes me, a piece of my heart will always belong to that vibrant, beautiful city. </p>
+      
+      <img src="chinaview3.jpeg" alt="China Streets filled with Red Lanterns">
+      <img src="chinaview3.5.jpeg" alt="Rap performance in China Concert">
+    </section>
+
+    <section id="ending">
+      <h2>Ending Thoughts...</h2>
+      
+          <p>China has so much to offer—far more than what many people realize at first glance. Often, outsiders only see the surface: the towering skylines, the crowded tourist attractions, or the headlines they read.  But beneath that surface lies a rich, intricate tapestry of culture, history, tradition, and everyday life that reveals itself only to those who take the time to truly explore.</p> 
+      
+          <p>My biggest suggestion for anyone visiting China is this: go beyond the tourist guidebooks. Step away from the crowded landmarks and let yourself wander. Walk through local neighborhoods, try small family-run restaurants, strike up conversations, and observe the rhythm of daily life. There is so much depth waiting to be discovered—hidden stories, authentic experiences, and a genuine warmth that often gets overlooked.</p> 
+      
+          <p>China isn’t just a destination; it’s a journey that invites you to look deeper, to challenge your assumptions, and to walk away with a newfound appreciation for its beauty, complexity, and heart. So come with an open mind and a curious spirit—and let the country surprise you.</p>
+      
+      <p> See it for Yourself!</p>
+      
+      <img src="chinaview4.jpeg" alt="Shanghai skyline at night">
+      <img src="chinaview4.5.jpeg" alt="Rap performance in China Concert">
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Explore China by Amelia Peng | <a href="https://en.wikipedia.org/wiki/China" target="_blank">Learn More</a></p>
+    </footer>
+  </div>
 </body>
 </html>
